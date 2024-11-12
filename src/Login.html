@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Smaller top header styling */
+        .top-header {
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            background-color: #ddd;
+            box-sizing: border-box;
+        }
+        .top-header img {
+            width: 100%;
+            height: auto;
+        }
+        /* Main header styling */
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex-direction: row;
+        }
+        .image-section {
+            background-color: #e3f2fd;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .form-section {
+            padding: 40px;
+            width: 50%;
+        }
+        .form-section h2 {
+            margin-bottom: 20px;
+        }
+        .form-section input {
+            width: 97%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        /* Style for placeholder text */
+        .form-section input::placeholder {
+            font-size: 16px;
+        }
+        .form-section .form-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .form-section .forgot-password {
+            font-size: 14px;
+            color: #e53935;
+            text-decoration: none;
+        }
+        .form-section .btn {
+            width: 48%;
+            padding: 8px;
+            background-color: #e53935;
+            border: none;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .form-section p {
+            margin-top: 15px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .form-section p a {
+            color: #e53935;
+            text-decoration: none;
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f1f1f1;
+            box-sizing: border-box;
+        }
+        footer img {
+            width: 100%;
+            height: auto;
+        }
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                box-shadow: none;
+            }
+            .image-section {
+                display: none;
+            }
+            .form-section {
+                width: 100%;
+                padding: 20px;
+            }
+            .form-section h2 {
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Smaller top header -->
+<div class="top-header">
+    <img src="./Images/Top Header.png" alt="Top Header Image">
+</div>
+
+<!-- Main header -->
+<header>
+    <img src="./Images/Header.png" alt="Main Header Image">
+</header>
+
+<div class="container">
+    <div class="image-section">
+        <img src="./Images/Sideimage.png" alt="Shopping illustration">
+    </div>
+    <div class="form-section">
+        <h2>Log In</h2>
+        <form>
+            <input type="email" placeholder="Email or Phone Number" required>
+            <input type="password" placeholder="Password" required>
+            <div class="form-actions">
+                <button class="btn" type="submit">Log In</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+        </form>
+
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+</div>
+
+<footer>
+    <img src="./Images/Footer.png" alt="Footer placeholder image">
+</footer>
+
+</body>
+</html>
